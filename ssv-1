@@ -1,0 +1,66 @@
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2024-06-09                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Tue Jul  9 14:08:00 EDT 2024
+
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 2 minutes
+Processor  : AMD EPYC-Rome Processor
+CPU cores  : 4 @ 2300.000 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 7.8 GiB
+Swap       : 8.0 GiB
+Disk       : 52.0 GiB
+Distro     : Debian GNU/Linux 12 (bookworm)
+Kernel     : 6.1.0-9-amd64
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ❌ Offline
+
+IPv4 Network Information:
+---------------------------------
+ISP        : Solid Systems LLC
+ASN        : AS399275 Solid Systems LLC
+Host       : Solid NEW York
+Location   : Buffalo, New York (NY)
+Country    : United States
+
+fio Disk Speed Tests (Mixed R/W 50/50) (Partition /dev/vda1):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 124.94 MB/s  (31.2k) | 2.39 GB/s    (37.3k)
+Write      | 125.27 MB/s  (31.3k) | 2.40 GB/s    (37.5k)
+Total      | 250.21 MB/s  (62.5k) | 4.79 GB/s    (74.9k)
+           |                      |
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 9.50 GB/s    (18.5k) | 12.00 GB/s   (11.7k)
+Write      | 10.00 GB/s   (19.5k) | 12.80 GB/s   (12.5k)
+Total      | 19.50 GB/s   (38.1k) | 24.81 GB/s   (24.2k)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping
+-----           | -----                     | ----            | ----            | ----
+Clouvider       | London, UK (10G)          | 627 Mbits/sec   | 1.39 Gbits/sec  | 80.4 ms
+Eranium         | Amsterdam, NL (100G)      | 743 Mbits/sec   | 2.01 Gbits/sec  | 91.7 ms
+Uztelecom       | Tashkent, UZ (10G)        | 420 Mbits/sec   | 457 Mbits/sec   | 189 ms
+Leaseweb        | Singapore, SG (10G)       | busy            | 31.5 Mbits/sec  | 228 ms
+Clouvider       | Los Angeles, CA, US (10G) | 820 Mbits/sec   | 1.87 Gbits/sec  | 87.2 ms
+Leaseweb        | NYC, NY, US (10G)         | busy            | 7.27 Gbits/sec  | 10.5 ms
+Edgoo           | Sao Paulo, BR (1G)        | 719 Mbits/sec   | 1.18 Gbits/sec  | 133 ms
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value
+                |
+Single Core     | 1227
+Multi Core      | 4020
+Full Test       | https://browser.geekbench.com/v6/cpu/6847545
+
+YABS completed in 10 min 15 sec
